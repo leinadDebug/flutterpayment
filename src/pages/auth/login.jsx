@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../components/logo";
 import Button from "../../components/button";
 
-const SignUp = () => {
+const Login = () => {
   return (
     <>
       <main className="min-h-screen h-full flex items-center justify-center">
@@ -11,23 +11,17 @@ const SignUp = () => {
             <Logo />
           </div>
           <h3 className="text-gray-500 text-sm font-primary text-center">
-            Already have an account?{" "}
+            Don&apos;t have an account?{" "}
             <Link
-              to={"/login"}
+              to={"/register"}
               className="outline-none underline text-gray-900 font-primary"
             >
-              Log in
+              Sign up
             </Link>
           </h3>
 
           {/* form field */}
           <form className="flex flex-col gap-y-5 mt-7">
-            <input
-              type="text"
-              className="outline-none p-2 rounded-md ring-2 box-border ring-gray-900 bg-white text-sm text-gray-900 font-primary"
-              placeholder="Name"
-            />
-
             <input
               type="email"
               className="outline-none p-2 rounded-md ring-2 box-border ring-gray-900 bg-white text-sm text-gray-900 font-primary"
@@ -40,7 +34,7 @@ const SignUp = () => {
               placeholder="Password"
             />
 
-            <Button buttonText="Create account" buttonWidth={"w-full"} />
+            <Button buttonText="Log in" buttonWidth={"w-full"} />
           </form>
         </div>
       </main>
@@ -48,4 +42,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Login;
