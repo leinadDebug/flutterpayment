@@ -1,14 +1,11 @@
-import { useState } from "react";
-import "./App.css";
+import "./App.scss";
 import Payment from "./component/payment";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <main style={{ display: "flex", gap: 20}}>
-        <Payment/>
+      <main style={{ display: "flex", gap: 20 }}>
+        <Payment />
       </main>
     </>
   );
