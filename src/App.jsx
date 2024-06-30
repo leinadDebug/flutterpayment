@@ -1,12 +1,15 @@
 import "./App.scss";
-import Payment from "./component/payment";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/home/home";
 
 function App() {
   return (
     <>
-      <main style={{ display: "flex", gap: 20 }}>
-        <Payment />
-      </main>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
     </>
   );
 }
