@@ -25,9 +25,9 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen h-full flex items-center">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-3 gap-10">
+      <main className="min-h-screen h-full flex items-center md:pt-0 md:pb-0 pt-20 pb-10">
+        <div className="max-w-5xl mx-auto xl:px-0 px-5 ">
+          <div className="grid md:grid-cols-3 grid-cols-1 lg:gap-10 gap-5">
             {/* loop through packageData and display data in UI */}
             {packagesData.map((data, index) => {
               const { packagePlan, packageTitle, price } = data;
